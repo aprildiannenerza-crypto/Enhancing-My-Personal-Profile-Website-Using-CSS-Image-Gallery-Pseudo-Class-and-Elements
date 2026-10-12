@@ -1,0 +1,482 @@
+/* ==========================================
+   ENHANCING MY PERSONAL PROFILE WEBSITE
+   CSS IMAGE GALLERY, PSEUDO-CLASSES,
+   AND PSEUDO-ELEMENTS
+========================================== */
+
+
+/* ELEMENT SELECTORS */
+
+body {
+    background-color: #eaf6ff;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #263238;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #064789;
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #9ecae1;
+}
+
+h2 {
+    color: #087ca7;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    letter-spacing: 0.4px;
+}
+
+
+/* CLASS SELECTORS */
+
+.profile-info {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #9ecae1;
+    border-left: 7px solid #087ca7;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* NAVIGATION LINKS */
+
+nav {
+    background: linear-gradient(90deg, #023e8a, #0077b6);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* PSEUDO-CLASS: LINK */
+
+.nav-link:link {
+    color: white;
+}
+
+/* PSEUDO-CLASS: VISITED */
+
+.nav-link:visited {
+    color: #d9c2ff;
+}
+
+/* PSEUDO-CLASS: HOVER */
+
+.nav-link:hover {
+    color: white;
+    background: linear-gradient(135deg, #064789, #4361ee);
+    text-decoration: underline;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* PSEUDO-CLASS: ACTIVE */
+
+.nav-link:active {
+    color: #ffd166;
+    background-color: #023e8a;
+    transform: translateY(1px);
+}
+
+/* PSEUDO-CLASS: FOCUS */
+
+.nav-link:focus {
+    outline: 3px solid #ffd166;
+    outline-offset: 3px;
+}
+
+
+/* SECTION TITLES */
+
+.section-title {
+    text-align: center;
+    color: #064789;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* PSEUDO-ELEMENT: AFTER */
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #087ca7, #4361ee);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+/* FORM STYLES */
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #064789;
+}
+
+.form-input {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #7db9d8;
+    border-radius: 7px;
+    font: inherit;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* PSEUDO-CLASS: FOCUS */
+
+.form-input:focus {
+    outline: 3px solid #89cff0;
+    outline-offset: 2px;
+    border-color: #064789;
+    background-color: #f4fbff;
+    box-shadow: 0 0 8px rgba(8, 124, 167, 0.25);
+}
+
+
+/* BUTTON STYLES */
+
+.btn {
+    font-family: inherit;
+    font-weight: bold;
+    padding: 10px 22px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.primary {
+    background-color: #087ca7;
+    color: white;
+}
+
+/* PSEUDO-CLASS: HOVER */
+
+.primary:hover {
+    background: linear-gradient(135deg, #064789, #4361ee);
+    box-shadow: 0 4px 10px rgba(0, 80, 140, 0.25);
+}
+
+/* PSEUDO-CLASS: ACTIVE */
+
+.primary:active {
+    background-color: #023e8a;
+    transform: scale(0.97);
+}
+
+/* PSEUDO-CLASS: FOCUS */
+
+.primary:focus {
+    outline: 3px solid #89cff0;
+    outline-offset: 3px;
+}
+
+
+/* LIST PROPERTIES */
+
+ul {
+    list-style-type: square;
+    padding-left: 35px;
+    margin: 15px 0;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 35px;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* MAIN HEADER */
+
+#main-header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 35px 20px;
+    background: linear-gradient(135deg, #89cff0, #4361ee);
+    border-bottom: 5px solid #087ca7;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#main-header h1 {
+    color: white;
+}
+
+/* PSEUDO-ELEMENT: BEFORE */
+
+#main-header::before {
+    content: "✦";
+    display: block;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* CONTACT SECTION */
+
+#contact-section {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    border: 2px solid #9ecae1;
+    border-top: 6px solid #087ca7;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* GENERAL LAYOUT */
+
+main {
+    box-sizing: border-box;
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+section {
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 22px;
+    border: 2px solid #b7d9ed;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 80, 140, 0.15);
+    position: relative;
+}
+
+/* PSEUDO-ELEMENT: BEFORE */
+
+section h2::before {
+    content: "❖ ";
+    color: #087ca7;
+    text-shadow: 1px 1px 2px #9ecae1;
+}
+
+
+/* CSS IMAGE GALLERY */
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.image-gallery img {
+    width: 30%;
+    height: 180px;
+    object-fit: cover;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    border: 3px solid #7db9d8;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 80, 140, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+    .image-gallery img {
+        width: 45%;
+        height: 140px;
+    }
+}
+
+/* PHONE SCREEN */
+
+@media (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .image-gallery img {
+        height: 140px;
+    }
+}
+
+.image-gallery img:active {
+    transform: scale(0.97);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .image-gallery img {
+        height: 140px;
+    }
+}
+
+
+/* IMAGE PSEUDO-CLASS: ACTIVE */
+
+.image-gallery img:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 5px rgba(0, 80, 140, 0.2);
+}
+
+
+/* OTHER IMAGES */
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 12px;
+}
+
+img:focus {
+    outline: 3px solid #087ca7;
+    outline-offset: 3px;
+}
+
+
+/* VIDEO AND AUDIO */
+
+video {
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    border: 3px solid #7db9d8;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    clear: both;
+    background: linear-gradient(90deg, #023e8a, #0077b6);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+/* PSEUDO-ELEMENT: AFTER */
+
+footer::after {
+    content: " ✦";
+    color: #ffd166;
+    font-size: 18px;
+    text-shadow: 0 1px 3px rgba(255, 209, 102, 0.4);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 500px) {
+    main {
+        width: 90%;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .image-gallery img {
+        height: 160px;
+    }
+
+    .nav-link {
+        margin: 3px;
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    .form-input {
+        width: 100%;
+    }
+}
